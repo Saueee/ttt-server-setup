@@ -1,0 +1,6 @@
+ttt-mysql/database/*
+ttt-csgo/csgo-dedicated/*
+ttt-fastdl/content/ttt/*
+!ttt-mysql/database/.gitkeep
+!ttt-csgo/csgo-dedicated/.gitkeep
+!ttt-fastdl/content/ttt/.gitkeep

@@ -1,1 +1,1 @@
-# ttt-server-setup
+# TTT-config

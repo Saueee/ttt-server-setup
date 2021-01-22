@@ -1,0 +1,48 @@
+
+version: "3"
+services:
+ ttt-csgo:
+  build: "./ttt-csgo/."
+  ports:
+   - "27015:27015/tcp"
+   - "27015:27015/udp"
+   - "27005:27005/tcp"
+   - "27005:27005/udp"
+  environment:
+   - METAMOD_VERSION=1.10
+   - SOURCEMOD_VERSION=1.10
+   - TTT_VERSION=1.10
+   - SRCDS_TOKEN="YOUR_GAME_TOKEN" #change this
+   - SRCDS_PORT="27015"
+   - SRCDS_WORKSHOP_AUTHKEY="YOUR_WORKSHOP_AUTH_KEY" #change this
+   - SRCDS_HOST_WORKSHOP_COLLECTION="2363054558" #change this (keep for my collection)
+   - SRCDS_PW="" #DON'T change -> Change in ttt-config gamemode_casual_server.cfg
+   - SRCDS_GAMETYPE="0"
+   - SRCDS_GAMEMODE="0"
+   - SRCDS_WORKSHOP_START_MAP="679851958" #change this (keep if you play my collection)
+   - SRCDS_MAXPLAYERS="32"
+   - SRCDS_NET_PUBLIC_ADDRESS="xxx.xxx.xxx.xxx" #change this -> also change in gamemode_casual_server.cfg
+   - SRCDS_IP="0.0.0.0"
+   - SRCDS_CLIENT_PORT="27005"
+  volumes:
+   - "./ttt-csgo/csgo-dedicated:/home/steam/csgo-dedicated"
+
+ ttt-mysql:
+  build: "./ttt-mysql/."
+  command: 
+   - "--default-authentication-plugin=mysql_native_password"
+  environment:
+   MYSQL_ROOT_PASSWORD: mypw #change this -> also change in databases.cfg
+   MYSQL_ROOT_HOST: "%"
+   MYSQL_DATABASE: ttt
+  volumes:
+   - "./ttt-mysql/database:/var/lib/mysql"
+
+ ttt-fastdl:
+  build: "./ttt-fastdl/."
+  environment:
+   - TTT_VERSION=1.10 
+  ports:
+   - "80:80"
+  volumes:
+   - "./ttt-fastdl/content:/usr/local/apache2/htdocs"
