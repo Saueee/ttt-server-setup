@@ -21,6 +21,6 @@ Start Server with "docker-compose up"<br>
 <br>
 Update:<br>
 To update the server (metamod, sourcemod, ttt, ttt-config)<br>
-Copy yourt new ttt-config.zip to ./ttt-csgo/<br>
+Copy your new ttt-config.zip to ./ttt-csgo/<br>
 Delete the file "deletetoupdate.file" in ./ttt-csgo/csgo-dedicated/<br>
 Start server with "docker-compose up --build"<br>
