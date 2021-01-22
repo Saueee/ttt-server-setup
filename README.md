@@ -15,7 +15,7 @@ Edit config files in ttt-config as you like<br>
 databases.cfg, admins_simple.ini and gamemode_casual_server.cfg MUST be edited!<br>
 Pack your ttt-config folder into a .zip archive named "ttt-config.zip"<br>
 Copy the archive into ./ttt-csgo/ and overwrite the example<br>
-Optional: Deploy your Info/Hompage in ./ttt-fastdl/content if you want
+Optional: Deploy your Info/Hompage in ./ttt-fastdl/content if you want<br>
 Start Server with "docker-compose up"<br>
 
 <br>
