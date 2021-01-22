@@ -1,6 +1,6 @@
 # TTT-server-setup
 
-The goal of this project is to setup a working TTT Server as easy as possible.<br>
+The goal of this project is to setup a working TTT Server (https://github.com/TroubleInTerroristTown/Public) as easy as possible.<br>
 The project sets up the csgo-ttt server,<br>
 a persistent mysql-db,<br>
 a fastdl server with optional Info page.<br>
