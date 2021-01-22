@@ -23,4 +23,5 @@ Update:<br>
 To update the server (metamod, sourcemod, ttt, ttt-config)<br>
 Copy your new ttt-config.zip to ./ttt-csgo/<br>
 Delete the file "deletetoupdate.file" in ./ttt-csgo/csgo-dedicated/<br>
+Optional: To reset the db delete everything in ./ttt-mysql/database/<br>
 Start server with "docker-compose up --build"<br>
