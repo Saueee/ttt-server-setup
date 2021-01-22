@@ -1,4 +1,4 @@
-# TTT-config
+# TTT-server-setup
 
 The goal of this project is to setup a working TTT Server as easy as possible.<br>
 The project sets up the csgo-ttt server,<br>
